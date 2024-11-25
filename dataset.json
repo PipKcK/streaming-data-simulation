@@ -1,0 +1,45 @@
+{
+    "subscriptions": [
+      {"name": "Basic", "price": 9.99, "features": "Access to standard content"},
+      {"name": "Premium", "price": 14.99, "features": "Access to HD content"},
+      {"name": "Family", "price": 19.99, "features": "Multiple screens"},
+      {"name": "Student", "price": 4.99, "features": "Discounted access for students"}
+    ],
+    "users": [
+      {"name": "Alice Johnson", "email": "alice@example.com", "password": "password123", "subscription_id": 1},
+      {"name": "Bob Smith", "email": "bob@example.com", "password": "securepass", "subscription_id": 2},
+      {"name": "Carol Williams", "email": "carol@example.com", "password": "mysecret", "subscription_id": 3},
+      {"name": "David Brown", "email": "david@example.com", "password": "password456", "subscription_id": 4},
+      {"name": "Emma Davis", "email": "emma@example.com", "password": "supersecure", "subscription_id": 2},
+      {"name": "Frank Miller", "email": "frank@example.com", "password": "mypassword", "subscription_id": 1},
+      {"name": "Grace Lee", "email": "grace@example.com", "password": "bestpassword", "subscription_id": 3},
+      {"name": "Harry Wilson", "email": "harry@example.com", "password": "topsecret", "subscription_id": 2},
+      {"name": "Ivy Clark", "email": "ivy@example.com", "password": "hidden123", "subscription_id": 4},
+      {"name": "Jack Wright", "email": "jack@example.com", "password": "password789", "subscription_id": 1}
+    ],
+    "content": [
+      {"title": "Action Movie 1", "genre": "Action", "release_year": 2021, "content_type": "Movie", "rating": 7.5},
+      {"title": "Drama Series 1", "genre": "Drama", "release_year": 2020, "content_type": "Series", "rating": 8.2},
+      {"title": "Comedy Movie 1", "genre": "Comedy", "release_year": 2019, "content_type": "Movie", "rating": 6.8},
+      {"title": "Documentary 1", "genre": "Documentary", "release_year": 2022, "content_type": "Movie", "rating": 9.1}
+    ],
+    "watchhistory": [
+      {"user_id": 1, "content_id": 1, "progress": 100},
+      {"user_id": 2, "content_id": 2, "progress": 50},
+      {"user_id": 3, "content_id": 3, "progress": 75},
+      {"user_id": 4, "content_id": 4, "progress": 90}
+    ],
+    "reviews": [
+      {"user_id": 1, "content_id": 1, "rating": 8.0, "review_text": "Great movie!"},
+      {"user_id": 2, "content_id": 2, "rating": 7.5, "review_text": "Very engaging series."},
+      {"user_id": 3, "content_id": 3, "rating": 6.0, "review_text": "Good laughs, but could be better."},
+      {"user_id": 4, "content_id": 4, "rating": 9.0, "review_text": "Eye-opening documentary."}
+    ],
+    "paymenthistory": [
+      {"user_id": 1, "amount": 9.99, "method": "Credit Card"},
+      {"user_id": 2, "amount": 14.99, "method": "PayPal"},
+      {"user_id": 3, "amount": 19.99, "method": "Credit Card"},
+      {"user_id": 4, "amount": 4.99, "method": "Debit Card"}
+    ]
+}
+  
