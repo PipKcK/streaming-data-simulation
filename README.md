@@ -157,7 +157,7 @@ Sample test data is provided in `test_data.json` to populate the database. It in
 
 ## **Contributors**
 
-- **Your Name** - [GitHub Profile](https://github.com/Sai-Krishna7)
+- **Sai Deeduvanu** - [GitHub Profile](https://github.com/Sai-Krishna7)
 
 ---
 
