@@ -90,6 +90,16 @@ streaming-data-simulation/
   ```bash
   python insert-data.py
   ```
+5. Run the Flask API server:
+  Start the Flask API server:
+  ```bash
+  python app.py
+  ```
+6. Launch the Streamlit dashboard:
+  Open the dashboard in your browser:
+  ```bash
+  streamlit run dashboard.py
+  ```
 
 ---
 
@@ -128,31 +138,37 @@ Sample test data is provided in `test_data.json` to populate the database. It in
 
 ---
 
-## **Example Queries**
+## **Interact with the API**
 
-- **Retrieve all users and their subscriptions**:
-  ```sql
-  SELECT u.name, u.email, s.name AS subscription
-  FROM users u
-  JOIN subscriptions s ON u.subscription_id = s.subscription_id;
-  ```
+- **The Flask API exposes RESTful endpoints for querying analytics and operational data.**
+  Example:
+  - GET /api/subscriptions: Fetch subscription metrics.
+  - GET /api/top-content: Fetch top-rated content.
 
-- **List all reviews for a specific content item**:
-  ```sql
-  SELECT r.review_text, r.rating, u.name AS user
-  FROM reviews r
-  JOIN users u ON r.user_id = u.user_id
-  WHERE r.content_id = 1;
-  ```
+---
 
-  ---
+## **Dashboard Features**
+
+- **Subscription Metrics**:
+    - Visualize the number of users for each subscription tier using bar charts.
+- **Top-Rated Content**:
+    - Display content ratings and genres using tables and scatter plots.
+- **Interactive Filters**:
+    - Filter content by genre or rating thresholds dynamically.
+
+---
+
 
 ## **Future Enhancements**
-- **API Integration**: Add RESTful APIs using Flask or FastAPI to expose endpoints for data access.
-- **Authentication**: Implement user authentication and authorization mechanisms.
-- **Data Visualization**: Create dashboards for insights like popular content, top users, or revenue.
-- **Recommendation System**: Build a content recommendation system based on user preferences.
 
+- **Advanced Analytics**:
+    - Add time-series visualizations for user activity and revenue trends.
+- **User Authentication**:
+    - Secure the API endpoints with authentication mechanisms.
+- **Cloud Deployment**:
+    - Deploy the dashboard and API using platforms like AWS, Heroku, or Streamlit Cloud.
+- **Recommendation System**:
+    - Build personalized recommendations based on user activity.
 ---
 
 ## **Contributors**
