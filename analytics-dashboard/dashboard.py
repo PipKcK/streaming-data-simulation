@@ -1,22 +1,3 @@
-# import streamlit as st
-# import requests
-
-# # Set page title
-# st.title("Streaming Service Analytics Dashboard")
-
-# # Subscription Metrics
-# st.header("Subscription Metrics")
-# subscriptions = requests.get("http://localhost:5000/api/subscriptions").json()
-# for sub in subscriptions:
-#     st.write(f"{sub['subscription']}: {sub['user_count']} users")
-
-# # Top Content
-# st.header("Top-Rated Content")
-# top_content = requests.get("http://localhost:5000/api/top-content").json()
-# for content in top_content:
-#     st.write(f"{content['title']} ({content['genre']}) - Rating: {content['rating']}")
-
-
 import streamlit as st
 import requests
 import pandas as pd
