@@ -1,6 +1,6 @@
 # **Streaming Data Simulation**
 
-This repository contains a simulation project for a media streaming platform. It demonstrates the implementation of a backend system to manage subscriptions, users, content, watch history, reviews, and payment processing. The project is designed to simulate real-world streaming services and provides an extensible framework for similar applications.
+This repository contains a simulation project for a media streaming platform. It demonstrates the implementation of a backend system to manage subscriptions, users, content, watch history, reviews, and payment processing. The project is designed to simulate real-world streaming services and provides an extensible framework for similar applications. The project has been extended to include a **Flask API layer** and a **Streamlit dashboard** for analytics, adding complexity and showcasing practical use cases of distributed systems.
 
 ## **Table of Contents**
 - [Overview](#overview)
