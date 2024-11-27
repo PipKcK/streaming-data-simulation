@@ -1,0 +1,24 @@
+{
+  "subscriptions": [
+    {
+      "name": "Basic",
+      "price": 9.99,
+      "features": "Access to standard content"
+    },
+    {
+      "name": "Premium",
+      "price": 14.99,
+      "features": "Access to HD content"
+    },
+    {
+      "name": "Family",
+      "price": 19.99,
+      "features": "Multiple screens"
+    },
+    {
+      "name": "Student",
+      "price": 4.99,
+      "features": "Discounted access for students"
+    }
+  ]
+}

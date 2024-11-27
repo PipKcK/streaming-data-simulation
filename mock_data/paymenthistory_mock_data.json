@@ -1,0 +1,504 @@
+{
+  "paymenthistory": [
+    {
+      "user_id": 1,
+      "amount": 19.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 2,
+      "amount": 19.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 3,
+      "amount": 19.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 4,
+      "amount": 14.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 5,
+      "amount": 14.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 6,
+      "amount": 9.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 7,
+      "amount": 4.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 8,
+      "amount": 4.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 9,
+      "amount": 19.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 10,
+      "amount": 4.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 11,
+      "amount": 4.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 12,
+      "amount": 4.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 13,
+      "amount": 19.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 14,
+      "amount": 19.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 15,
+      "amount": 19.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 16,
+      "amount": 14.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 17,
+      "amount": 9.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 18,
+      "amount": 19.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 19,
+      "amount": 19.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 20,
+      "amount": 14.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 21,
+      "amount": 4.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 22,
+      "amount": 4.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 23,
+      "amount": 9.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 24,
+      "amount": 14.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 25,
+      "amount": 4.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 26,
+      "amount": 19.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 27,
+      "amount": 19.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 28,
+      "amount": 4.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 29,
+      "amount": 14.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 30,
+      "amount": 19.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 31,
+      "amount": 4.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 32,
+      "amount": 4.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 33,
+      "amount": 19.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 34,
+      "amount": 19.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 35,
+      "amount": 14.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 36,
+      "amount": 19.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 37,
+      "amount": 14.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 38,
+      "amount": 19.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 39,
+      "amount": 14.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 40,
+      "amount": 9.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 41,
+      "amount": 4.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 42,
+      "amount": 19.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 43,
+      "amount": 9.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 44,
+      "amount": 4.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 45,
+      "amount": 19.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 46,
+      "amount": 4.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 47,
+      "amount": 9.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 48,
+      "amount": 19.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 49,
+      "amount": 4.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 50,
+      "amount": 14.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 51,
+      "amount": 19.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 52,
+      "amount": 9.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 53,
+      "amount": 19.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 54,
+      "amount": 14.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 55,
+      "amount": 4.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 56,
+      "amount": 19.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 57,
+      "amount": 4.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 58,
+      "amount": 19.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 59,
+      "amount": 4.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 60,
+      "amount": 4.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 61,
+      "amount": 14.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 62,
+      "amount": 14.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 63,
+      "amount": 9.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 64,
+      "amount": 19.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 65,
+      "amount": 9.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 66,
+      "amount": 4.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 67,
+      "amount": 14.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 68,
+      "amount": 14.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 69,
+      "amount": 19.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 70,
+      "amount": 19.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 71,
+      "amount": 4.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 72,
+      "amount": 14.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 73,
+      "amount": 9.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 74,
+      "amount": 4.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 75,
+      "amount": 9.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 76,
+      "amount": 9.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 77,
+      "amount": 14.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 78,
+      "amount": 4.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 79,
+      "amount": 14.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 80,
+      "amount": 19.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 81,
+      "amount": 9.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 82,
+      "amount": 4.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 83,
+      "amount": 9.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 84,
+      "amount": 14.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 85,
+      "amount": 4.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 86,
+      "amount": 4.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 87,
+      "amount": 4.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 88,
+      "amount": 19.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 89,
+      "amount": 9.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 90,
+      "amount": 19.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 91,
+      "amount": 19.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 92,
+      "amount": 9.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 93,
+      "amount": 4.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 94,
+      "amount": 14.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 95,
+      "amount": 9.99,
+      "method": "PayPal"
+    },
+    {
+      "user_id": 96,
+      "amount": 9.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 97,
+      "amount": 14.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 98,
+      "amount": 4.99,
+      "method": "Debit Card"
+    },
+    {
+      "user_id": 99,
+      "amount": 19.99,
+      "method": "Credit Card"
+    },
+    {
+      "user_id": 100,
+      "amount": 14.99,
+      "method": "Debit Card"
+    }
+  ]
+}

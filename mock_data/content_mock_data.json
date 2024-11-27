@@ -1,0 +1,704 @@
+{
+  "content": [
+    {
+      "title": "Family Honeymoon",
+      "genre": "Action",
+      "release_year": 1985,
+      "content_type": "Series",
+      "rating": 2.8
+    },
+    {
+      "title": "Out of the Fog",
+      "genre": "Adventure",
+      "release_year": 1986,
+      "content_type": "Movie",
+      "rating": 9.6
+    },
+    {
+      "title": "Crucible, The",
+      "genre": "Documentary",
+      "release_year": 1985,
+      "content_type": "Movie",
+      "rating": 3.5
+    },
+    {
+      "title": "Irreversible (Irréversible)",
+      "genre": "Thriller",
+      "release_year": 2007,
+      "content_type": "Movie",
+      "rating": 5.2
+    },
+    {
+      "title": "Otis",
+      "genre": "Thriller",
+      "release_year": 1987,
+      "content_type": "Movie",
+      "rating": 2.8
+    },
+    {
+      "title": "Forever Yours (Ikuisesti sinun)",
+      "genre": "Musical",
+      "release_year": 1994,
+      "content_type": "Series",
+      "rating": 8.5
+    },
+    {
+      "title": "Mighty Uke",
+      "genre": "Thriller",
+      "release_year": 1988,
+      "content_type": "Series",
+      "rating": 4.6
+    },
+    {
+      "title": "Final Fantasy VII: Advent Children",
+      "genre": "Adventure",
+      "release_year": 2013,
+      "content_type": "Series",
+      "rating": 9.2
+    },
+    {
+      "title": "True Story of Jesse James, The",
+      "genre": "Family",
+      "release_year": 1983,
+      "content_type": "Movie",
+      "rating": 6
+    },
+    {
+      "title": "Mad Bastards",
+      "genre": "Documentary",
+      "release_year": 2021,
+      "content_type": "Series",
+      "rating": 6.5
+    },
+    {
+      "title": "Girl Shy",
+      "genre": "Action",
+      "release_year": 2023,
+      "content_type": "Movie",
+      "rating": 3.5
+    },
+    {
+      "title": "They Drive by Night",
+      "genre": "Adventure",
+      "release_year": 1995,
+      "content_type": "Movie",
+      "rating": 4.6
+    },
+    {
+      "title": "Apostle, The",
+      "genre": "Romance",
+      "release_year": 2005,
+      "content_type": "Series",
+      "rating": 9
+    },
+    {
+      "title": "Purple Ball, The (Lilovyy shar)",
+      "genre": "Mystery",
+      "release_year": 1980,
+      "content_type": "Series",
+      "rating": 4.7
+    },
+    {
+      "title": "Babette's Feast (Babettes gæstebud)",
+      "genre": "Animation",
+      "release_year": 2003,
+      "content_type": "Movie",
+      "rating": 7
+    },
+    {
+      "title": "THX 1138",
+      "genre": "Romance",
+      "release_year": 1992,
+      "content_type": "Series",
+      "rating": 3.1
+    },
+    {
+      "title": "Complete History of My Sexual Failures, A",
+      "genre": "Musical",
+      "release_year": 1983,
+      "content_type": "Movie",
+      "rating": 7.6
+    },
+    {
+      "title": "Time to Love and a Time to Die, A",
+      "genre": "Documentary",
+      "release_year": 2003,
+      "content_type": "Series",
+      "rating": 6.4
+    },
+    {
+      "title": "Cool Ones, The",
+      "genre": "Documentary",
+      "release_year": 1994,
+      "content_type": "Movie",
+      "rating": 6.4
+    },
+    {
+      "title": "Pete Smalls Is Dead",
+      "genre": "Sci-Fi",
+      "release_year": 2001,
+      "content_type": "Movie",
+      "rating": 7.7
+    },
+    {
+      "title": "Arnulf Rainer",
+      "genre": "Fantasy",
+      "release_year": 1993,
+      "content_type": "Series",
+      "rating": 7.2
+    },
+    {
+      "title": "BloodRayne: Deliverance (BloodRayne II: Deliverance)",
+      "genre": "Documentary",
+      "release_year": 2014,
+      "content_type": "Series",
+      "rating": 7.6
+    },
+    {
+      "title": "Secret in Their Eyes, The (El secreto de sus ojos)",
+      "genre": "Thriller",
+      "release_year": 1998,
+      "content_type": "Movie",
+      "rating": 5.5
+    },
+    {
+      "title": "Cocaine Cowboys II: Hustlin' With the Godmother",
+      "genre": "Musical",
+      "release_year": 2007,
+      "content_type": "Movie",
+      "rating": 6.2
+    },
+    {
+      "title": "Sun Kissed",
+      "genre": "Horror",
+      "release_year": 2009,
+      "content_type": "Movie",
+      "rating": 7.7
+    },
+    {
+      "title": "Golden Boy",
+      "genre": "Documentary",
+      "release_year": 1993,
+      "content_type": "Series",
+      "rating": 4.1
+    },
+    {
+      "title": "Lion of the Desert",
+      "genre": "Adventure",
+      "release_year": 1984,
+      "content_type": "Movie",
+      "rating": 4.6
+    },
+    {
+      "title": "Crow: Salvation, The",
+      "genre": "Drama",
+      "release_year": 1985,
+      "content_type": "Movie",
+      "rating": 3.5
+    },
+    {
+      "title": "Barrens, The",
+      "genre": "Musical",
+      "release_year": 2024,
+      "content_type": "Movie",
+      "rating": 4.6
+    },
+    {
+      "title": "Breathless",
+      "genre": "Horror",
+      "release_year": 1988,
+      "content_type": "Movie",
+      "rating": 7.5
+    },
+    {
+      "title": "Art of War, The",
+      "genre": "Action",
+      "release_year": 1992,
+      "content_type": "Movie",
+      "rating": 9.3
+    },
+    {
+      "title": "Twisted Nerve",
+      "genre": "Animation",
+      "release_year": 2011,
+      "content_type": "Movie",
+      "rating": 1.6
+    },
+    {
+      "title": "Fail-Safe",
+      "genre": "Comedy",
+      "release_year": 1983,
+      "content_type": "Series",
+      "rating": 1.7
+    },
+    {
+      "title": "Commitments, The",
+      "genre": "Family",
+      "release_year": 1988,
+      "content_type": "Series",
+      "rating": 5.8
+    },
+    {
+      "title": "Eddie and the Cruisers",
+      "genre": "Fantasy",
+      "release_year": 2008,
+      "content_type": "Movie",
+      "rating": 2.7
+    },
+    {
+      "title": "Pigsty (Porcile)",
+      "genre": "Thriller",
+      "release_year": 2002,
+      "content_type": "Series",
+      "rating": 2.3
+    },
+    {
+      "title": "Brothers Rico, The",
+      "genre": "Horror",
+      "release_year": 2014,
+      "content_type": "Series",
+      "rating": 8.7
+    },
+    {
+      "title": "Dark Blue",
+      "genre": "Adventure",
+      "release_year": 1994,
+      "content_type": "Movie",
+      "rating": 8.1
+    },
+    {
+      "title": "3 Godfathers",
+      "genre": "Sci-Fi",
+      "release_year": 2004,
+      "content_type": "Movie",
+      "rating": 2.4
+    },
+    {
+      "title": "Horns",
+      "genre": "Sci-Fi",
+      "release_year": 1985,
+      "content_type": "Movie",
+      "rating": 5.1
+    },
+    {
+      "title": "Haunted House",
+      "genre": "Musical",
+      "release_year": 1994,
+      "content_type": "Movie",
+      "rating": 9.2
+    },
+    {
+      "title": "Hasty Heart, The",
+      "genre": "Drama",
+      "release_year": 1994,
+      "content_type": "Movie",
+      "rating": 1.4
+    },
+    {
+      "title": "Forest (Rengeteg)",
+      "genre": "Adventure",
+      "release_year": 1996,
+      "content_type": "Series",
+      "rating": 1.7
+    },
+    {
+      "title": "Disorderly Orderly, The",
+      "genre": "Romance",
+      "release_year": 1989,
+      "content_type": "Series",
+      "rating": 6.3
+    },
+    {
+      "title": "How I Unleashed World War II (Jak rozpetalem II wojne swiatowa)",
+      "genre": "Family",
+      "release_year": 1986,
+      "content_type": "Series",
+      "rating": 8.1
+    },
+    {
+      "title": "Strange Behaviour of Sexually Mature City Slickers at Mating Season, The (Das merkwürdige Verhalten geschlechtsreifer Großstädter zur Paarungszeit)",
+      "genre": "Romance",
+      "release_year": 1982,
+      "content_type": "Series",
+      "rating": 7.1
+    },
+    {
+      "title": "Metropolis",
+      "genre": "Adventure",
+      "release_year": 2008,
+      "content_type": "Movie",
+      "rating": 8.4
+    },
+    {
+      "title": "Billabong Odyssey",
+      "genre": "Action",
+      "release_year": 1985,
+      "content_type": "Movie",
+      "rating": 4.1
+    },
+    {
+      "title": "Autopsy (Macchie Solari)",
+      "genre": "Sci-Fi",
+      "release_year": 2009,
+      "content_type": "Series",
+      "rating": 9.7
+    },
+    {
+      "title": "Spaced Invaders",
+      "genre": "Drama",
+      "release_year": 1980,
+      "content_type": "Series",
+      "rating": 3.3
+    },
+    {
+      "title": "Asterix and the Vikings (Astérix et les Vikings)",
+      "genre": "Musical",
+      "release_year": 2018,
+      "content_type": "Series",
+      "rating": 7.6
+    },
+    {
+      "title": "I Served the King of England (Obsluhoval jsem anglického krále)",
+      "genre": "Animation",
+      "release_year": 2008,
+      "content_type": "Series",
+      "rating": 3.6
+    },
+    {
+      "title": "Edge, The (Kray)",
+      "genre": "Action",
+      "release_year": 1986,
+      "content_type": "Movie",
+      "rating": 9.5
+    },
+    {
+      "title": "Kiss Them for Me",
+      "genre": "Drama",
+      "release_year": 1999,
+      "content_type": "Movie",
+      "rating": 1.7
+    },
+    {
+      "title": "Age of Uprising: The Legend of Michael Kohlhaas (Michael Kohlhaas)",
+      "genre": "Documentary",
+      "release_year": 2014,
+      "content_type": "Movie",
+      "rating": 3.2
+    },
+    {
+      "title": "House of Yes, The",
+      "genre": "Musical",
+      "release_year": 2015,
+      "content_type": "Movie",
+      "rating": 5.9
+    },
+    {
+      "title": "Not Reconciled (Nicht versöhnt oder Es hilft nur Gewalt wo Gewalt herrscht)",
+      "genre": "Adventure",
+      "release_year": 1996,
+      "content_type": "Series",
+      "rating": 1.8
+    },
+    {
+      "title": "Desert Winds",
+      "genre": "Musical",
+      "release_year": 1986,
+      "content_type": "Movie",
+      "rating": 9.8
+    },
+    {
+      "title": "Let's Kill Ward's Wife",
+      "genre": "Sci-Fi",
+      "release_year": 2002,
+      "content_type": "Movie",
+      "rating": 6.3
+    },
+    {
+      "title": "Talk Radio",
+      "genre": "Drama",
+      "release_year": 1999,
+      "content_type": "Series",
+      "rating": 4
+    },
+    {
+      "title": "Louisiana Story",
+      "genre": "Adventure",
+      "release_year": 2004,
+      "content_type": "Movie",
+      "rating": 2.2
+    },
+    {
+      "title": "Appointment with Death",
+      "genre": "Drama",
+      "release_year": 2009,
+      "content_type": "Movie",
+      "rating": 8
+    },
+    {
+      "title": "Liam",
+      "genre": "Sci-Fi",
+      "release_year": 2016,
+      "content_type": "Movie",
+      "rating": 1.7
+    },
+    {
+      "title": "Unconscious (Inconscientes)",
+      "genre": "Romance",
+      "release_year": 1998,
+      "content_type": "Series",
+      "rating": 1.5
+    },
+    {
+      "title": "Burma Conspiracy, The (Largo Winch II)",
+      "genre": "Mystery",
+      "release_year": 2008,
+      "content_type": "Movie",
+      "rating": 3.7
+    },
+    {
+      "title": "Painless (Insensibles) ",
+      "genre": "Family",
+      "release_year": 2019,
+      "content_type": "Movie",
+      "rating": 1.6
+    },
+    {
+      "title": "Ashes of Time (Dung che sai duk)",
+      "genre": "Romance",
+      "release_year": 1995,
+      "content_type": "Movie",
+      "rating": 8.1
+    },
+    {
+      "title": "Once Around",
+      "genre": "Crime",
+      "release_year": 2018,
+      "content_type": "Series",
+      "rating": 3.5
+    },
+    {
+      "title": "Repossessed",
+      "genre": "Musical",
+      "release_year": 1987,
+      "content_type": "Series",
+      "rating": 3.5
+    },
+    {
+      "title": "Hulk",
+      "genre": "Animation",
+      "release_year": 1983,
+      "content_type": "Series",
+      "rating": 2.8
+    },
+    {
+      "title": "Torso",
+      "genre": "Crime",
+      "release_year": 2005,
+      "content_type": "Series",
+      "rating": 2.4
+    },
+    {
+      "title": "We Own the Night",
+      "genre": "Drama",
+      "release_year": 2011,
+      "content_type": "Movie",
+      "rating": 6.3
+    },
+    {
+      "title": "Anguish (Angustia)",
+      "genre": "Documentary",
+      "release_year": 1989,
+      "content_type": "Series",
+      "rating": 6.2
+    },
+    {
+      "title": "Mr. Jones",
+      "genre": "Documentary",
+      "release_year": 1987,
+      "content_type": "Series",
+      "rating": 9.3
+    },
+    {
+      "title": "Puppet Master 5: The Final Chapter",
+      "genre": "Family",
+      "release_year": 2020,
+      "content_type": "Series",
+      "rating": 9.4
+    },
+    {
+      "title": "Sudden Manhattan",
+      "genre": "Adventure",
+      "release_year": 2024,
+      "content_type": "Movie",
+      "rating": 2.1
+    },
+    {
+      "title": "Dr. Moreau's House of Pain",
+      "genre": "Comedy",
+      "release_year": 1980,
+      "content_type": "Series",
+      "rating": 7.6
+    },
+    {
+      "title": "Thief Who Came to Dinner, The",
+      "genre": "Horror",
+      "release_year": 2021,
+      "content_type": "Series",
+      "rating": 6.1
+    },
+    {
+      "title": "Dirty Mary Crazy Larry",
+      "genre": "Musical",
+      "release_year": 2008,
+      "content_type": "Movie",
+      "rating": 8.2
+    },
+    {
+      "title": "Little Dieter Needs to Fly",
+      "genre": "Comedy",
+      "release_year": 1981,
+      "content_type": "Movie",
+      "rating": 1.7
+    },
+    {
+      "title": "MacArthur",
+      "genre": "Fantasy",
+      "release_year": 2020,
+      "content_type": "Movie",
+      "rating": 4.2
+    },
+    {
+      "title": "I Hired a Contract Killer",
+      "genre": "Family",
+      "release_year": 1982,
+      "content_type": "Series",
+      "rating": 5.4
+    },
+    {
+      "title": "Four Rooms",
+      "genre": "Adventure",
+      "release_year": 2002,
+      "content_type": "Movie",
+      "rating": 3.1
+    },
+    {
+      "title": "The Adventures of Tartu",
+      "genre": "Mystery",
+      "release_year": 1984,
+      "content_type": "Series",
+      "rating": 1.8
+    },
+    {
+      "title": "The Merry Widow",
+      "genre": "Fantasy",
+      "release_year": 1990,
+      "content_type": "Movie",
+      "rating": 9.7
+    },
+    {
+      "title": "Kremlin Letter, The",
+      "genre": "Animation",
+      "release_year": 1999,
+      "content_type": "Series",
+      "rating": 5.5
+    },
+    {
+      "title": "Goofy Movie, A",
+      "genre": "Documentary",
+      "release_year": 2012,
+      "content_type": "Movie",
+      "rating": 2.3
+    },
+    {
+      "title": "1",
+      "genre": "Comedy",
+      "release_year": 2012,
+      "content_type": "Movie",
+      "rating": 9.3
+    },
+    {
+      "title": "Hole in the Head, A",
+      "genre": "Crime",
+      "release_year": 1993,
+      "content_type": "Movie",
+      "rating": 2.1
+    },
+    {
+      "title": "Winged Migration (Peuple migrateur, Le)",
+      "genre": "Fantasy",
+      "release_year": 2023,
+      "content_type": "Series",
+      "rating": 3.6
+    },
+    {
+      "title": "Children of the Corn: Revelation",
+      "genre": "Animation",
+      "release_year": 1990,
+      "content_type": "Series",
+      "rating": 1.9
+    },
+    {
+      "title": "A Matador's Mistress",
+      "genre": "Drama",
+      "release_year": 2020,
+      "content_type": "Series",
+      "rating": 4.9
+    },
+    {
+      "title": "6th Man, The (Sixth Man, The)",
+      "genre": "Mystery",
+      "release_year": 2023,
+      "content_type": "Series",
+      "rating": 3
+    },
+    {
+      "title": "Time in the Minors",
+      "genre": "Drama",
+      "release_year": 1999,
+      "content_type": "Series",
+      "rating": 6.2
+    },
+    {
+      "title": "Defending Your Life",
+      "genre": "Action",
+      "release_year": 2011,
+      "content_type": "Movie",
+      "rating": 5.6
+    },
+    {
+      "title": "Did You Hear About the Morgans?",
+      "genre": "Comedy",
+      "release_year": 2009,
+      "content_type": "Movie",
+      "rating": 4.9
+    },
+    {
+      "title": "Killer Pad",
+      "genre": "Comedy",
+      "release_year": 2000,
+      "content_type": "Movie",
+      "rating": 6.3
+    },
+    {
+      "title": "Thief Lord, The",
+      "genre": "Crime",
+      "release_year": 2005,
+      "content_type": "Movie",
+      "rating": 5.6
+    },
+    {
+      "title": "Gervaise",
+      "genre": "Drama",
+      "release_year": 1998,
+      "content_type": "Series",
+      "rating": 9.4
+    },
+    {
+      "title": "Boys Don't Cry",
+      "genre": "Mystery",
+      "release_year": 1986,
+      "content_type": "Movie",
+      "rating": 7.2
+    }
+  ]
+}
