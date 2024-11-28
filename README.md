@@ -5,7 +5,6 @@ This repository contains a simulation project for a media streaming platform. It
 ## **Table of Contents**
 - [Overview](#overview)
 - [Features](#features)
-- [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
 - [Database Schema](#database-schema)
 - [Test Data](#test-data)
@@ -38,19 +37,6 @@ The project utilizes **CockroachDB**, a distributed SQL database, for scalable a
 
 ---
 
-## **Project Structure**
-```bash
-streaming-data-simulation/
-│
-├── streaming-services.py   # Core script defining the backend services
-├── insert-data.py          # Script to insert test data into the database
-├── test_data.json          # Sample test dataset
-├── README.md               # Project documentation
-├── requirements.txt        # Python dependencies
-└── .gitignore              # Ignored files and directories
-```
----
-
 ## **Getting Started**
 
 ### **Prerequisites**
@@ -71,35 +57,30 @@ streaming-data-simulation/
 
 ### **Setup Instructions**
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/PipKcK/streaming-data-simulation.git
-   cd streaming-data-simulation
-   ```
+    ```bash
+    git clone https://github.com/PipKcK/streaming-data-simulation.git
+    cd streaming-data-simulation
+    ```
 2. Configure Your Environment
-  Export the DATABASE_URL environment variable with your CockroachDB connection string:
-  ```bash
-  export DATABASE_URL="postgresql://<username>:<password>@<host>:<port>/<database>?sslmode=verify-full"
-  ```
-3. Initialize the database:
-  Create the database schema by running:
-  ```bash
-  python streaming-services.py
-  ```
-4. Insert test data:
-  Populate the database with sample test data:
-  ```bash
-  python insert-data.py
-  ```
-5. Run the Flask API server:
-  Start the Flask API server:
-  ```bash
-  python app.py
-  ```
-6. Launch the Streamlit dashboard:
-  Open the dashboard in your browser:
-  ```bash
-  streamlit run dashboard.py
-  ```
+  - Export the DATABASE_URL environment variable with your CockroachDB connection string:
+    ```bash
+    export DATABASE_URL="postgresql://<username>:<password>@<host>:<port>/<database>?sslmode=verify-full"
+    ```
+3. Connect to the Cockroach Cluster:
+    ```bash
+    cd analytics-dashboard
+    python db_connection.py 
+    ```
+4. Run the Flask API server:
+  - Start the Flask API server:
+    ```bash
+    python app.py
+    ```
+5. Launch the Streamlit dashboard:
+  - Open the dashboard in your browser:
+    ```bash
+    streamlit run dashboard.py
+    ```
 
 ---
 
@@ -118,10 +99,10 @@ The project follows a relational database design. Below are the core tables and 
 
 ## **Test Data**
 
-Sample test data is provided in `test_data.json` to populate the database. It includes:
+Sample test data is provided in mock_data folder using mockaroo and the upload_data.py script to populate the database. It includes:
 - **4 Subscription Plans**
-- **10 Users**
-- **4 Content Items**
+- **100 Users**
+- **100 Content Items**
 - **Watch History**, **Reviews**, and **Payment History** for the users.
 
 ---
@@ -129,8 +110,8 @@ Sample test data is provided in `test_data.json` to populate the database. It in
 ## **Usage**
 
 ### **Run Scripts**
-- **Initialize Schema**: Run streaming-services.py to create all necessary tables.
-- **Insert Data**: Use insert-data.py to populate the database with sample data.
+- **Intiialize Environment variable**: Export DATABASE_URL with the connection strig for the cockroach cluster.
+- **Install Package Requirments & Run the API Layer**: Install necessary packages using the requirments.txt file in the analytics-dashboard folder and start the Flask server & the Streamlit Dashboard.
 - **Query the Database**: Open a SQL shell to interact with the database:
   - ```bash
     cockroach sql --url $DATABASE_URL
