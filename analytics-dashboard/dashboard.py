@@ -36,8 +36,12 @@ try:
         top_content = response.json()
         df_content = pd.DataFrame(top_content)
         if not df_content.empty:
-            st.write("Table View of Top Content")
-            st.table(df_content)
+            # Add a rank column starting from 1
+            df_content["Rank"] = range(1, len(df_content) + 1)
+
+            # Display the table view with rankings
+            st.write("Table View of Top Content (Ranked)")
+            st.table(df_content[["Rank", "title", "rating", "genre"]])  # Customize columns as needed
 
             # Plot content ratings
             fig = px.bar(
