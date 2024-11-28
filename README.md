@@ -38,19 +38,6 @@ The project utilizes **CockroachDB**, a distributed SQL database, for scalable a
 
 ---
 
-## **Project Structure**
-```bash
-streaming-data-simulation/
-│
-├── streaming-services.py   # Core script defining the backend services
-├── insert-data.py          # Script to insert test data into the database
-├── test_data.json          # Sample test dataset
-├── README.md               # Project documentation
-├── requirements.txt        # Python dependencies
-└── .gitignore              # Ignored files and directories
-```
----
-
 ## **Getting Started**
 
 ### **Prerequisites**
