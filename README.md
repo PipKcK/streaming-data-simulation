@@ -125,6 +125,13 @@ Sample test data is provided in mock_data folder using mockaroo and the upload_d
   Example:
   - GET /api/subscriptions: Fetch subscription metrics.
   - GET /api/top-content: Fetch top-rated content.
+  - GET /api/popular-content-over-time
+    - Description: Fetch the most popular content titles based on watch progress over a specified month.
+    - Query Parameters: month (required): The month to filter content popularity (e.g., Aug, Sep, Oct, Nov).
+  - GET /api/revenue-trends
+    - Description: Fetch monthly revenue trends based on user payments.
+  - GET /api/user-stats/<user_id>
+    - Description: Fetch watch history and payment history for a specific user.
 
 ---
 
@@ -133,17 +140,19 @@ Sample test data is provided in mock_data folder using mockaroo and the upload_d
 - **Subscription Metrics**:
     - Visualize the number of users for each subscription tier using bar charts.
 - **Top-Rated Content**:
-    - Display content ratings and genres using tables and scatter plots.
-- **Interactive Filters**:
-    - Filter content by genre or rating thresholds dynamically.
+    - A bar chart of the top 10 highest-rated content.
+    - A genre filter to view content within specific genres.
+- **Popular Content Over Time**:
+    - A month filter to select popular content in a given month.
+    - A bar chart of the top 10 content titles by popularity.
+- **User-Specific Stats**:
+    - A detailed table and visualizations of the user's watch history and payment history.
 
 ---
 
 
 ## **Future Enhancements**
 
-- **Advanced Analytics**:
-    - Add time-series visualizations for user activity and revenue trends.
 - **User Authentication**:
     - Secure the API endpoints with authentication mechanisms.
 - **Cloud Deployment**:
