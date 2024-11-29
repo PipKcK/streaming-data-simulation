@@ -1,6 +1,3 @@
 flask
 psycopg2
-streamlit
-plotly
-pandas
 requests
