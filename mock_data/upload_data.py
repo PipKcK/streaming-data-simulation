@@ -5,7 +5,7 @@ import psycopg2
 def get_connection():
     return psycopg2.connect(os.environ["DATABASE_URL"])
 
-# Function to upload watchhistory data
+# ----------------------------Function to upload watchhistory data---------------------------------
 def upload_watchhistory(json_file):
     with open(json_file, "r") as file:
         data = json.load(file)
@@ -39,9 +39,9 @@ def upload_watchhistory(json_file):
         # Insert watchhistory data into the database
         for watch in data["watchhistory"]:
             cursor.execute("""
-                INSERT INTO watchhistory (user_id, content_id, progress)
-                VALUES (%s, %s, %s)
-            """, (watch["user_id"], watch["content_id"], watch["progress"]))
+                INSERT INTO watchhistory (user_id, content_id, watched_on, progress)
+                VALUES (%s, %s, %s, %s)
+            """, (watch["user_id"], watch["content_id"], watch["watched_on"], watch["progress"]))
 
         # Commit the transaction
         connection.commit()
@@ -54,8 +54,45 @@ def upload_watchhistory(json_file):
             connection.close()
 
 # Call the function
-json_file = "watchhistory_mock_data.json"  # Replace with the correct JSON file path
+json_file = "watchhistory_mock_data2.json"  # Replace with the correct JSON file path
 upload_watchhistory(json_file)
+
+# # ------------------------Insert data into the `paymenthistory` table---------------------------
+# def upload_paymenthistory(json_file):
+#     with open(json_file, "r") as file:
+#         data = json.load(file)
+
+#     connection = get_connection()
+#     cursor = connection.cursor()
+
+#     try:
+#         # Fetch all user_ids from the database
+#         cursor.execute("SELECT user_id FROM users ORDER BY user_id ASC")
+#         user_ids = [row[0] for row in cursor.fetchall()]
+
+#         # Update user_ids in the mock data to match actual user_ids in the database
+#         for payment in data["paymenthistory"]:
+#             payment["user_id"] = user_ids[payment["user_id"] - 1]  # Adjust for 0-based indexing
+
+#         # Insert new paymenthistory data
+#         for payment in data["paymenthistory"]:
+#             cursor.execute("""
+#                 INSERT INTO paymenthistory (user_id, amount, payment_date, method)
+#                 VALUES (%s, %s, %s, %s)
+#             """, (payment["user_id"], payment["amount"], payment["payment_date"], payment["method"]))
+
+#         connection.commit()
+#         print("Payment history data uploaded successfully!")
+#     except Exception as e:
+#         print(f"Error uploading payment history data: {e}")
+#     finally:
+#         if connection:
+#             cursor.close()
+#             connection.close()
+
+# # Call the function
+# upload_paymenthistory("paymenthistory_mock_data2.json")
+
 
 # # ---------------------------Function to upload reviews data-------------------------------------
 # def upload_reviews(json_file):
@@ -108,47 +145,3 @@ upload_watchhistory(json_file)
 # # Call the function
 # json_file = "reviews_mock_data.json"  # Replace with the correct JSON file path
 # upload_reviews(json_file)
-
-
-# # ------------------------Insert data into the `paymenthistory` table---------------------------
-# def upload_paymenthistory(json_file):
-#     with open(json_file, "r") as file:
-#         data = json.load(file)
-
-#     # Connect to the database
-#     connection = get_connection()
-#     cursor = connection.cursor()
-
-#     try:
-#         # Fetch all user_ids from the users table
-#         cursor.execute("SELECT user_id FROM users ORDER BY user_id ASC")
-#         user_ids = [row[0] for row in cursor.fetchall()]
-
-#         # Resolve user_id relationships in paymenthistory mock data
-#         for payment in data["paymenthistory"]:
-#             nth_index = payment["user_id"] - 1  # Adjusting for 0-based index
-#             if nth_index < len(user_ids):
-#                 payment["user_id"] = user_ids[nth_index]
-#             else:
-#                 raise IndexError(f"User ID {payment['user_id']} in mock data exceeds the number of users in the database.")
-
-#         # Insert paymenthistory data into the database
-#         for payment in data["paymenthistory"]:
-#             cursor.execute("""
-#                 INSERT INTO paymenthistory (user_id, amount, payment_date, method)
-#                 VALUES (%s, %s, DEFAULT, %s)
-#             """, (payment["user_id"], payment["amount"], payment["method"]))
-
-#         # Commit the transaction
-#         connection.commit()
-#         print("Payment history data uploaded successfully!")
-#     except (Exception, psycopg2.Error) as error:
-#         print(f"Error uploading payment history data: {error}")
-#     finally:
-#         if connection:
-#             cursor.close()
-#             connection.close()
-
-# # Call the function
-# json_file = "paymenthistory_mock_data.json"
-# upload_paymenthistory(json_file)
