@@ -3,19 +3,25 @@
 This repository contains a simulation project for a media streaming platform. It demonstrates the implementation of a backend system to manage subscriptions, users, content, watch history, reviews, and payment processing. The project is designed to simulate real-world streaming services and provides an extensible framework for similar applications. The project has been extended to include a **Flask API layer** and a **Streamlit dashboard** for analytics, adding complexity and showcasing practical use cases of distributed systems.
 
 ## **Table of Contents**
+- [Architecture Diagram](#architecture-diagram)
 - [Overview](#overview)
+- [Tech Stack](#tech-stack)
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Database Schema](#database-schema)
 - [Test Data](#test-data)
 - [Usage](#usage)
+- [Backend API Endpoints](#backend-api-endpoints)
+- [Latest Advancements](#latest-advancements)
 - [Future Enhancements](#future-enhancements)
 - [Contributors](#contributors)
 
 ---
 
+## **Architecture Diagram**
 ![architecture-diagram](https://github.com/user-attachments/assets/64d00630-74ca-488a-9d13-3d5eceeb68de)
 
+---
 
 ## **Overview**
 
@@ -26,6 +32,18 @@ This project simulates the core backend operations of a streaming service. It in
 - Handling payment transactions for subscription plans.
 
 The project utilizes **CockroachDB**, a distributed SQL database, for scalable and resilient data storage.
+
+---
+
+## Tech Stack
+
+- **Frontend:** Streamlit, Plotly
+- **Backend:** Flask, AWS Lambda, AWS API Gateway
+- **Database:** CockroachDB
+- **Hosting:**
+  - **Frontend:** Streamlit Cloud
+  - **Backend:** AWS Lambda, API Gateway
+- **Python Libraries:** Flask, psycopg2-binary, aws-wsgi, flask-cors
 
 ---
 
@@ -112,56 +130,79 @@ Sample test data is provided in mock_data folder using mockaroo and the upload_d
 
 ## **Usage**
 
-### **Run Scripts**
-- **Intiialize Environment variable**: Export DATABASE_URL with the connection strig for the cockroach cluster.
-- **Install Package Requirments & Run the API Layer**: Install necessary packages using the requirments.txt file in the analytics-dashboard folder and start the Flask server & the Streamlit Dashboard.
-- **Query the Database**: Open a SQL shell to interact with the database:
-  - ```bash
-    cockroach sql --url $DATABASE_URL
-    ```
+### Access the Web App
+The analytics dashboard is accessible via its **Streamlit Cloud** URL:
+
+```plaintext
+https://analytics-dash.streamlit.app/
+```
 
 ---
 
-## **Interact with the API**
+## **Backend API Endpoints**
 
-- **The Flask API exposes RESTful endpoints for querying analytics and operational data.**
-  Example:
-  - GET /api/subscriptions: Fetch subscription metrics.
-  - GET /api/top-content: Fetch top-rated content.
-  - GET /api/popular-content-over-time
-    - Description: Fetch the most popular content titles based on watch progress over a specified month.
-    - Query Parameters: month (required): The month to filter content popularity (e.g., Aug, Sep, Oct, Nov).
-  - GET /api/revenue-trends
-    - Description: Fetch monthly revenue trends based on user payments.
-  - GET /api/user-stats/<user_id>
-    - Description: Fetch watch history and payment history for a specific user.
-
----
-
-## **Dashboard Features**
-
-- **Subscription Metrics**:
-    - Visualize the number of users for each subscription tier using bar charts.
-- **Top-Rated Content**:
-    - A bar chart of the top 10 highest-rated content.
-    - A genre filter to view content within specific genres.
-- **Popular Content Over Time**:
-    - A month filter to select popular content in a given month.
-    - A bar chart of the top 10 content titles by popularity.
-- **User-Specific Stats**:
-    - A detailed table and visualizations of the user's watch history and payment history.
+- **The Flask API is exposed through AWS API Gateway and serves as the backend for the dashboard. Below are the key endpoints**:
+   | **Endpoint**                       | **Method** | **Description**                              |
+   |------------------------------------|------------|----------------------------------------------|
+   | `/api/subscriptions`               | `GET`      | Fetch subscription metrics.                  |
+   | `/api/top-content`                 | `GET`      | Fetch top-rated content.                     |
+   | `/api/revenue-trends`              | `GET`      | Fetch revenue trends.                        |
+   | `/api/payments-trend`              | `GET`      | Get payment trends (weekly).                 |
+   | `/api/watch-history-genre`         | `GET`      | Fetch watch history grouped by genre.        |
+   | `/api/user-stats/<int:user_id>`    | `GET`      | Fetch user-specific stats.                   |
+   | `/api/popular-content-trend`       | `GET`      | Fetch popular content over time.             |
+   | `/api/payment-method-distribution` | `GET`      | Fetch payment method distribution.           |
 
 ---
 
+## Latest Advancements
+
+### Deployment of Streamlit App to Streamlit Cloud
+The frontend web application for the analytics dashboard is built using **Streamlit** and has been successfully deployed to **Streamlit Cloud**, making it publicly accessible. This allows stakeholders to interact with live analytics directly through a web browser.
+
+#### Steps:
+1. The Streamlit app is hosted in a private GitHub repository.
+2. It was deployed to Streamlit Cloud by connecting the GitHub repository and selecting the `main` branch.
+
+#### Key Features:
+- Interactive visualizations using Plotly.
+- CORS configuration for API calls to ensure seamless integration with the backend.
+
+---
+
+### Deployment of Flask API to AWS Lambda
+The Flask-based backend API layer has been packaged and deployed to **AWS Lambda** using a ZIP file. It is exposed via **AWS API Gateway** to allow the frontend to fetch data from the CockroachDB cluster dynamically.
+
+#### Steps:
+
+#### Packaging and Uploading:
+1. The Flask app and its dependencies (`flask`, `psycopg2-binary`, `aws-wsgi`) were packaged into a ZIP file.
+2. The ZIP file was uploaded to AWS Lambda as the runtime environment.
+
+#### AWS Lambda:
+1. The Flask app was adapted to use **AWS WSGI** (`awsgi`) for Lambda compatibility.
+2. Lambda was configured with the necessary environment variables, including the database connection string and SSL certificate.
+
+#### API Gateway:
+1. Routes were defined for each endpoint (e.g., `/api/subscriptions`, `/api/revenue-trends`).
+2. Integrated with Lambda to process requests and responses.
+
+#### Database Connection:
+- Flask API securely connects to **CockroachDB** using `psycopg2` and an **SSL certificate**.
+
+#### Security and Scalability:
+- **CORS settings** were added to the API Gateway to allow cross-origin requests.
+- Lambda ensures **scalable** and **cost-efficient** operation.
+
+---
 
 ## **Future Enhancements**
 
 - **User Authentication**:
     - Secure the API endpoints with authentication mechanisms.
-- **Cloud Deployment**:
-    - Deploy the dashboard and API using platforms like AWS, Heroku, or Streamlit Cloud.
 - **Recommendation System**:
     - Build personalized recommendations based on user activity.
+
 ---
 
 ## **Contributors**
