@@ -2,10 +2,15 @@ from flask import Flask, jsonify, request
 import awsgi
 from db_connection import get_connection
 from flask_cors import CORS
+import logging
 
 app = Flask(__name__)
 
 CORS(app)
+
+# Logger configuration
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 # Endpoint: Subscription Metrics
 @app.route('/api/subscriptions', methods=['GET'])
@@ -201,7 +206,46 @@ def get_payment_method_distribution():
 
 # AWS Lambda Handler
 def lambda_handler(event, context):
-    return awsgi.response(app, event, context)
+    try:
+        # Log the received event for debugging
+        print("Received event:", event)
+
+        # Determine the HTTP method and path based on the event structure
+        if "httpMethod" in event:  # REST API (v1)
+            http_method = event["httpMethod"]
+            event["path"] = event["path"]
+        elif "requestContext" in event and "http" in event["requestContext"]:  # HTTP API (v2)
+            http_method = event["requestContext"]["http"]["method"]
+            event["httpMethod"] = http_method  # Add to event for compatibility
+            event["path"] = event["rawPath"]  # Add to event for compatibility
+
+            # Handle query parameters for HTTP API (v2)
+            if "rawQueryString" in event and event["rawQueryString"]:
+                event["queryStringParameters"] = {
+                    key: value for key, value in 
+                    (pair.split("=") for pair in event["rawQueryString"].split("&"))
+                }
+            else:
+                event["queryStringParameters"] = {}
+
+        # Ensure required keys are present in the event
+        if "httpMethod" not in event or "path" not in event:
+            raise KeyError("The required keys 'httpMethod' or 'path' are missing in the event.")
+
+        # Process the event with awsgi
+        return awsgi.response(app, event, context)
+    except KeyError as e:
+        print(f"KeyError in lambda_handler: {e}")
+        return {
+            "statusCode": 400,
+            "body": f"Bad Request: {str(e)}",
+        }
+    except Exception as e:
+        print(f"Exception in lambda_handler: {e}")
+        return {
+            "statusCode": 500,
+            "body": f"Internal Server Error: {str(e)}",
+        }
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)
