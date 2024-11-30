@@ -14,6 +14,9 @@ This repository contains a simulation project for a media streaming platform. It
 
 ---
 
+![image](https://github.com/user-attachments/assets/801de408-234f-4f58-9169-fbc61545f58a)
+
+
 ## **Overview**
 
 This project simulates the core backend operations of a streaming service. It includes functionalities for:
