@@ -130,14 +130,6 @@ Sample test data is provided in mock_data folder using mockaroo and the upload_d
 
 ## **Usage**
 
-### **Run Scripts**
-- **Intiialize Environment variable**: Export DATABASE_URL with the connection strig for the cockroach cluster.
-- **Install Package Requirments & Run the API Layer**: Install necessary packages using the requirments.txt file in the analytics-dashboard folder and start the Flask server & the Streamlit Dashboard.
-- **Query the Database**: Open a SQL shell to interact with the database:
-  - ```bash
-    cockroach sql --url $DATABASE_URL
-    ```
-
 ### Access the Web App
 The analytics dashboard is accessible via its **Streamlit Cloud** URL:
 
