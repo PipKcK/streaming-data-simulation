@@ -2,3 +2,5 @@
 __pycache__/
 *.pyc
 cockroach-data/
+psycopg2-3.11/
+flask-api2/

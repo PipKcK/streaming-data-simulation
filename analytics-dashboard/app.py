@@ -1,7 +1,11 @@
 from flask import Flask, jsonify, request
+import awsgi
 from db_connection import get_connection
+from flask_cors import CORS
 
 app = Flask(__name__)
+
+CORS(app)
 
 # Endpoint: Subscription Metrics
 @app.route('/api/subscriptions', methods=['GET'])
@@ -42,14 +46,12 @@ def get_top_content():
             cursor.close()
             connection.close()
 
-
 # Endpoint: Revenue Trends
 @app.route('/api/revenue-trends', methods=['GET'])
 def get_revenue_trends():
     try:
-        # Extract optional date range from query parameters
-        start_date = request.args.get('start_date', '2024-09-01')  # Default to a very early date
-        end_date = request.args.get('end_date', '2024-09-30')      # Default to a very late date
+        start_date = request.args.get('start_date', '2024-09-01')
+        end_date = request.args.get('end_date', '2024-09-30')
 
         connection = get_connection()
         cursor = connection.cursor()
@@ -70,11 +72,7 @@ def get_revenue_trends():
             cursor.close()
             connection.close()
 
-
-# New Advanced Endpoints
-# ----------------------
-
-# 1. Time-Series Data for Payments
+# Other Advanced Endpoints (Payments Trend, Watch History by Genre, etc.)
 @app.route('/api/payments-trend', methods=['GET'])
 def get_payments_trend():
     try:
@@ -96,7 +94,6 @@ def get_payments_trend():
             cursor.close()
             connection.close()
 
-# 2. Watch History by Genre
 @app.route('/api/watch-history-genre', methods=['GET'])
 def get_watch_history_genre():
     try:
@@ -119,14 +116,12 @@ def get_watch_history_genre():
             cursor.close()
             connection.close()
 
-# 3. User-Specific Watch and Payment Data
 @app.route('/api/user-stats/<int:user_id>', methods=['GET'])
 def get_user_stats(user_id):
     try:
         connection = get_connection()
         cursor = connection.cursor()
-        
-        # Fetch user's watch history
+
         watch_query = """
             SELECT c.title, w.progress, w.watched_on
             FROM watchhistory w
@@ -137,7 +132,6 @@ def get_user_stats(user_id):
         cursor.execute(watch_query, (user_id,))
         watch_history = [{"title": row[0], "progress": float(row[1]), "watched_on": row[2]} for row in cursor.fetchall()]
 
-        # Fetch user's payment history
         payment_query = """
             SELECT amount, method, payment_date
             FROM paymenthistory
@@ -147,7 +141,6 @@ def get_user_stats(user_id):
         cursor.execute(payment_query, (user_id,))
         payment_history = [{"amount": float(row[0]), "method": row[1], "payment_date": row[2]} for row in cursor.fetchall()]
 
-        # Combine data
         result = {
             "user_id": user_id,
             "watch_history": watch_history,
@@ -184,7 +177,7 @@ def get_popular_content_trend():
             cursor.close()
             connection.close()
 
-# 5. Payment Method Distribution
+# Add Payment Method Distribution Endpoint
 @app.route('/api/payment-method-distribution', methods=['GET'])
 def get_payment_method_distribution():
     try:
@@ -206,5 +199,9 @@ def get_payment_method_distribution():
             cursor.close()
             connection.close()
 
+# AWS Lambda Handler
+def lambda_handler(event, context):
+    return awsgi.response(app, event, context)
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=5000)

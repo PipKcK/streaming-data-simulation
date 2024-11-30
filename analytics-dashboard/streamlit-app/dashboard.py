@@ -13,7 +13,7 @@ end_date = st.sidebar.date_input("End Date")
 # Function to fetch data from API
 def fetch_data(endpoint, params=None):
     try:
-        response = requests.get(f"http://localhost:5000/api/{endpoint}", params=params)
+        response = requests.get(f"https://424vyr3g82.execute-api.us-east-1.amazonaws.com/api/{endpoint}", params=params)
         response.raise_for_status()
         return response.json()
     except requests.exceptions.RequestException as e:
@@ -41,7 +41,7 @@ else:
 # Subscription Metrics
 st.header("Subscription Metrics")
 try:
-    response = requests.get("http://localhost:5000/api/subscriptions")
+    response = requests.get("https://424vyr3g82.execute-api.us-east-1.amazonaws.com/api/subscriptions")
     if response.status_code == 200:
         subscriptions = response.json()
         df = pd.DataFrame(subscriptions)
@@ -64,7 +64,7 @@ except requests.exceptions.RequestException as e:
 # Top Content
 st.header("Top-Rated Content")
 try:
-    response = requests.get("http://localhost:5000/api/top-content")
+    response = requests.get("https://424vyr3g82.execute-api.us-east-1.amazonaws.com/api/top-content")
     if response.status_code == 200:
         top_content = response.json()
         df_content = pd.DataFrame(top_content)
@@ -86,21 +86,7 @@ try:
                 template="plotly_dark"
             )
             st.plotly_chart(fig, use_container_width=True)
-
-            # # Add genre filter
-            # st.write("Filter by Genre")
-            # genre_filter = st.selectbox("Genre", options=df_content["genre"].unique())
-            # filtered_data = df_content[df_content["genre"] == genre_filter]
-            # if not filtered_data.empty:
-            #     fig = px.bar(
-            #         filtered_data,
-            #         x="title",
-            #         y="rating",
-            #         title=f"Top Content in Genre: {genre_filter}",
-            #         labels={"title": "Title", "rating": "Rating"},
-            #         template="plotly"
-            #     )
-            #     st.plotly_chart(fig, use_container_width=True)
+            
 except requests.exceptions.RequestException as e:
     st.error(f"Error connecting to the API: {e}")
 
@@ -109,7 +95,7 @@ except requests.exceptions.RequestException as e:
 # ---------------------------------------
 st.header("Revenue Trends Over Time")
 try:
-    response = requests.get("http://localhost:5000/api/payments-trend")
+    response = requests.get("https://424vyr3g82.execute-api.us-east-1.amazonaws.com/api/payments-trend")
     if response.status_code == 200:
         payments = response.json()
         df_payments = pd.DataFrame(payments)
@@ -133,7 +119,7 @@ except requests.exceptions.RequestException as e:
 # ---------------------------------------
 st.header("Watch History by Genre")
 try:
-    response = requests.get("http://localhost:5000/api/watch-history-genre")
+    response = requests.get("https://424vyr3g82.execute-api.us-east-1.amazonaws.com/api/watch-history-genre")
     if response.status_code == 200:
         genres = response.json()
         df_genres = pd.DataFrame(genres)
@@ -156,7 +142,7 @@ except requests.exceptions.RequestException as e:
 # ---------------------------------------
 st.header("Popular Content Trends Over Time")
 try:
-    response = requests.get("http://localhost:5000/api/popular-content-trend")
+    response = requests.get("https://424vyr3g82.execute-api.us-east-1.amazonaws.com/api/popular-content-trend")
     if response.status_code == 200:
         popular_content = response.json()
         df_popular = pd.DataFrame(popular_content)
@@ -197,7 +183,7 @@ except requests.exceptions.RequestException as e:
 # ---------------------------------------
 st.header("Payment Method Distribution")
 try:
-    response = requests.get("http://localhost:5000/api/payment-method-distribution")
+    response = requests.get("https://424vyr3g82.execute-api.us-east-1.amazonaws.com/api/payment-method-distribution")
     if response.status_code == 200:
         payment_methods = response.json()
         df_methods = pd.DataFrame(payment_methods)
@@ -230,7 +216,7 @@ if user_id_input:
             st.error("Invalid User ID. Please enter a numeric value.")
         else:
             user_id = int(user_id_input)  # Convert to integer for API call
-            response = requests.get(f"http://localhost:5000/api/user-stats/{user_id}")
+            response = requests.get(f"https://424vyr3g82.execute-api.us-east-1.amazonaws.com/api/user-stats/{user_id}")
             if response.status_code == 200:
                 user_stats = response.json()
 
