@@ -14,7 +14,7 @@ This repository contains a simulation project for a media streaming platform. It
 
 ---
 
-![image](https://github.com/user-attachments/assets/801de408-234f-4f58-9169-fbc61545f58a)
+![architecture-diagram](https://github.com/user-attachments/assets/64d00630-74ca-488a-9d13-3d5eceeb68de)
 
 
 ## **Overview**
