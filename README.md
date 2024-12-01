@@ -133,9 +133,7 @@ Sample test data is provided in mock_data folder using mockaroo and the upload_d
 ### Access the Web App
 The analytics dashboard is accessible via its **Streamlit Cloud** URL:
 
-```plaintext
-https://analytics-dash.streamlit.app/
-```
+[https://analytics-dash.streamlit.app/](https://analytics-dash.streamlit.app/)
 
 ---
 
@@ -149,7 +147,7 @@ https://analytics-dash.streamlit.app/
    | `/api/revenue-trends`              | `GET`      | Fetch revenue trends.                        |
    | `/api/payments-trend`              | `GET`      | Get payment trends (weekly).                 |
    | `/api/watch-history-genre`         | `GET`      | Fetch watch history grouped by genre.        |
-   | `/api/user-stats/<int:user_id>`    | `GET`      | Fetch user-specific stats.                   |
+   | `/api/user-stats/<user_id>`    | `GET`      | Fetch user-specific stats.                   |
    | `/api/popular-content-trend`       | `GET`      | Fetch popular content over time.             |
    | `/api/payment-method-distribution` | `GET`      | Fetch payment method distribution.           |
 
