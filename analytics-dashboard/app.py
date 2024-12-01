@@ -121,7 +121,7 @@ def get_watch_history_genre():
             cursor.close()
             connection.close()
 
-@app.route('/api/user-stats/<int:user_id>', methods=['GET'])
+@app.route('/api/user-stats/<user_id>', methods=['GET'])
 def get_user_stats(user_id):
     try:
         connection = get_connection()
