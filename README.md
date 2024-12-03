@@ -94,6 +94,7 @@ The project utilizes **CockroachDB**, a distributed SQL database, for scalable a
 3. Connect to the Cockroach Cluster:
     ```bash
     cd analytics-dashboard
+    pip install -r requirements.txt
     python db_connection.py 
     ```
 4. Run the Flask API server:
@@ -101,9 +102,11 @@ The project utilizes **CockroachDB**, a distributed SQL database, for scalable a
     ```bash
     python app.py
     ```
-5. Launch the Streamlit dashboard:
+5. Launch the Streamlit dashboard (On a separate terminal):
   - Open the dashboard in your browser:
     ```bash
+    cd streamlit-app
+    pip install -r requirements.txt
     streamlit run dashboard.py
     ```
 
