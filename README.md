@@ -207,6 +207,8 @@ The Flask-based backend API layer has been packaged and deployed to **AWS Lambda
     - Secure the API endpoints with authentication mechanisms.
 - **Recommendation System**:
     - Build personalized recommendations based on user activity.
+- **ML Integration**:
+    - Adding machine learning models for predictive insights.
 
 ---
 
