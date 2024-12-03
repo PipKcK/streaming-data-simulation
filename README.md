@@ -86,7 +86,11 @@ The project utilizes **CockroachDB**, a distributed SQL database, for scalable a
   - Export the DATABASE_URL environment variable with your CockroachDB connection string:
     ```bash
     export DATABASE_URL="postgresql://<username>:<password>@<host>:<port>/<database>?sslmode=verify-full"
-    ```
+    ``` 
+  - For Graders:
+    ```bash
+    $env:DATABASE_URL = "postgresql://grader:cAaV3y4oWwM6jKjD4tXXEA@data-project-3264.jxf.cockroachlabs.cloud:26257/streaming_services_db?sslmode=verify-full"
+    ``` 
 3. Connect to the Cockroach Cluster:
     ```bash
     cd analytics-dashboard
